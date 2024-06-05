@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const hypnoInsightRoute = require("./routes/hypnoInsightRoutes");
+const hypnoInsightRoute = require("./routes/hypnosisFactsRoute");
 
 require("dotenv").config();
 const PORT = process.env.PORT || 5050;
