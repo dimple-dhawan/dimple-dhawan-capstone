@@ -1,5 +1,5 @@
 const router =  require("express").Router();
-const prescreeningAnswerController = require("../controllers/prescreening-answer-controller");
+const prescreeningAnswerController = require("../controllers/prescreeningAnswerController");
 
 router
     .route("/")

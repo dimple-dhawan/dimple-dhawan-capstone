@@ -1,141 +1,168 @@
 [
     {
+        "id": "1",
         "statement": "What is hypnosis?",
         "details": "Hypnosis is a state of deep relaxation and focused concentration.  Hypnosis is also called hypnotherapy.",
         "type": "facts"
     },
     {
+        "id": "2",
         "statement": "Hypnosis is Mind Control.",
         "details": "False!  You are in control at all times.  It is your responsibilty to follow the guidance and instructions of the hypnotist.",
         "type": "myth"
     },
     {
+        "id": "3",
         "statement": "Hypnosis is Deep Sleep.",
         "details": "False!  In hypnosis, you can hear and feel everything around you.  You eyes may be closed and you will be fully alert and awre of your surroundings.  ",
         "type": "myth"
     },
     {
+        "id": "4",
         "statement": "Hypnotherapy is considered to be a safe treatment when performed by a trained practitioner.",
         "details": "Hypnotherapy can have a calming effect on regions of the brain that control breathing, heart rate and other autonomic functions, leading to a state of deep relaxation. ",
         "type": "facts"
     },
     {
+        "id": "5",
         "statement": "Who is a good candidate for hypnotherapy?",
         "details": "Good hypnosis clients are those that are of average or higher intelligence, have the ability to focus their mind, and can follow simple step-by-step instructions. ",
         "details-1": "The best hypnosis clients may be those with a capacity for creativity and a vivid  imagination, such as having the ability to get drawan into a movie or book.",
         "type": "facts"
     },
     {
+        "id": "6",
         "statement": "Hypnosis is a special state.",
         "details": "Hypnosis is a natural state. We go in and out of hypnotic trance states at least twice a day.",
         "details-1": "Remember the last time you drove on your regular route, perhaps to work or the grocery store?  Do you remember everything that happened along the way?  Most likely, you may have been thinking about something else - such as what's for dinner, or upcoming plans.  You were driving on auto-pilot with your unconscious mind in the drivers seat.  That is a driving trance. ",
         "type": "myth"
     },
     {
+        "id": "7",
         "statement": "The hypnotherapist will know your deepest darkest secrets.",
         "details": "False!  You are in control at all times.   You won't reveal any information that you wish to keep secret. ",
         "type": "myth"
     },
     {
+        "id": "8",
         "statement": "The hypnotherapist will make you bark like a dog or do something embarassing.",
         "details": "False!  You are in control at all times.  Your hypnotherapist is your guide for hypnosis.  The hypnotherapist is like the navigation system that tells you where to go, and you can decide whether to go or not.  You can't be made to do anything against your morals, values or will.",
         "type": "myth"
     },
     {
+        "id": "9",
         "statement": "Hypnosis is a natural state.",
         "details": "Hypnosis is a natural state of  deep relaxation and heightened awareness.  Hypnosis is very similar to guided meditation or even daydreaming.  ",
         "details-1": "The difference between guided meditation and is that hypnosis is goal-directed.",
         "type": "did-you-know"
     },
     {
+        "id": "10",
         "statement": "You cannot get stuck in hypnosis.",
         "details": "While in hypnosis, you are aware of your surroundings at all times.  If there was an emergency, you would wake up or the hypnotherapist would wake you.   Otherwise, you would just fall asleep and wake up on your own.  ",
         "type": "fact"
     },
     {
+        "id": "11",
         "statement": "You are in a state of hypnosis every day.",
         "details": "When you daydream, or get lost in a movie or book, you are in a state of trance. ",
         "type": "did-you-know"
     },
     {
+        "id": "12",
         "statement": "I'm not hypnotizable.  My mind is too strong.",
         "details": "False.  You can be hypnotized if you are willing and want to be hypnotized.   The choice is yours.  In fact, you may be a great hypnotic subject, if you have the ability the ability to strongly focus and direct your attention willingly.",
         "type": "myth"
     },
     {
+        "id": "13",
         "statement": "Hypnotherapists have special powers.",
         "details": "False. A hypnotherapist is just a guide, who can guide you into hypnosis.  It's up to you to follow the instructions. ",
         "type": "myth"
     },
     {
+        "id": "14",
         "statement": "All hypnosis is self-hypnosis.",
         "details": "A hypnotherapist can give you a therapeutic hypnotic suggestion and it is up to you to follow the suggestion.  ",
         "type": "did-you-know"
     },
     {
+        "id": "15",
         "statement": "In hypnosis, you will always tell the truth.",
         "details": "False.   Hypnosis is not a truth serum.   You still have free will and moral judgement while in hypnosis.  No one can make you say anything that you don't want to.",
         "type": "myth"
     },
     {
+        "id": "16",
         "statement": "Everyone experiences hypnosis differently.",
         "details": "While in hypnosis, your conscious mind may or may not drift.  You may remember some, all or very little of the session.",
         "type": "did-you-know"
     },
     {
+        "id": "17",
         "statement": "Hypnosis may not be appropriate for people with severe mental health issues such as psychotic symptoms, including hallucinations and delusions. ",
         "details": "If you have a serious mental illness, please contact a doctor before considering hypnosis for any non-mental illness related issues.   A doctor's note may be required.  ",
         "type": "fact"
     },
     {
+        "id": "18",
         "statement": "Hypnosis can be effective in helping people cope with pain, stress and anxiety.",
         "details": "Hypnosis can help you to relax, and redirect the attention of any sensation of pain.  Hypnosis and other related techniques can help you to gain perspective, increase your confidence and build resilience to move forward.",
         "type": "fact"
     },
     {
+        "id": "19",
         "statement": "Who can be hypnotized?",
         "details": "Every normal person is hypnotizable.",
         "detials-1": "The exception to this is anyone under 4 years of age due to lack of concentration; anyone on psychotics; the developmentally challenged; and any paronoid person. ",
         "type": "fact"
     },
     {
+        "id": "20",
         "statement": "Hypnosis is commonly used for mental health conditions.",
         "details": "Hypnosis has been commonly used to reduce and help cope with panic attacks, post traumatic stress, fears and phobias.",
         "type": "did-you-know"
     },
     {
+        "id": "21",
         "statement": "There may be mentions of hypnosis in the bible",
         "details": "Examples include:  Genesis 2.21, 1 Samuel 26:12, and Acts 10:10. ",
         "type": "did-you-know"
     },
     {
+        "id": "22",
         "statement": "Sigmund Freud Learned Hypnosis before he developed psychoanalysis.",
         "details": "Freud used hypnosis for many years.  He faced difficulty in hypnotizing many patients because he grossly misunderstood the nature of hypnosis.  He failed to realize that the client, not the hypnotherapist, is in control of their use and 'depth' of hypnosis.  He failed to have lasting results in many of his clients that he did hypnotize.  There is little doubt now that Freud’s failure with hypnosis was largely due to his personality.  ",
         "type": "did-you-know"
     },
     {
+        "id": "23",
         "statement": "You don't need to believe in hypnosis to be hypnotized.",
         "details": "If you don't want to go into a hypnotic trance, you won't.   Belief is not required.   Only permission is required to go into hypnosis.",
         "type": "did-you-know"
     },
     {
+        "id": "24",
         "statement": "Hypnosis is a pleasant state.",
         "details": "You can talk in hypnosis.  The hypnotist is not looking for logical or correct answers when you are in hypnosis.   The hypnotist is looking for spontaneous emotional answers.",
         "type": "did-you-know"
     },
     {
+        "id": "25",
         "statement": "What is the unconscious mind?",
         "details": "The unconscious mind is highly intelligent.   It can be very spontaneous and youthful.  It is not always logical or consistent.   It controls the autonomic body functions such as your heart, breathing and your immmune system.",
         "details-1": "The unconscious mind can include repressed feelings, hidden and long-term memories, habits, thoughts, desires, and reactions.  Your unconscious mind is responsible for 90% of your brains processing power.  Up to 90% of your decison-making, thoughts and behaviours is unconscious.  ",
         "type": "did-you-know"
     },
     {
+        "id": "26",
         "statement": "What is the conscious mind?",
         "details": "The conscious mind is involves all the things you are currently aware of and thinking about.  The conscious mind is responsible for short term memory and will power. ",
         "details-1": "The conscious mind helps you understand when there's a problem that you cannot solve but these solutions are not found Win the conscious mind.  ",
         "type": "did-you-know"
     },
     {
+        "id": "27",
         "statement": "Hypnosis is one of the most effective ways to access the unconscious mind.",
         "details": "Your unconscious can be an invaluable source of knowledge, wisdom, insights, and guidance.",
         "details-1": "In hypnosis, you're in a relaxed state and your conscious mind is quieted, so you're able to access thoughts and feelings that are hidden from your conscious awareness. ",

@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const hypnoInsightRoute = require("./routes/hypnoInsightRoutes");
 
 require("dotenv").config();
 const PORT = process.env.PORT || 5050;
@@ -8,28 +9,30 @@ const PORT = process.env.PORT || 5050;
 app.use(cors());
 app.use(express.json());
 
-const pageRoutes = require("./routes/page-route");
+app.use("/hypno-insight", hypnoInsightRoute)
+
+const pageRoutes = require("./routes/pageRoute");
 app.use("/pages/", pageRoutes);
 
-const userRoutes = require("./routes/user-route");
+const userRoutes = require("./routes/userRoute");
 app.use("/users/", userRoutes);
 
-const interestRoutes = require("./routes/interest-route");
+const interestRoutes = require("./routes/interestRoute");
 app.use("/interests/", interestRoutes);
 
-const toolRoutes = require("./routes/tool-route");
+const toolRoutes = require("./routes/toolRoute");
 app.use("/tools/", toolRoutes);
 
-const prescreeningQuestionsRoutes = require("./routes/prescreening-answer-route");
+const prescreeningQuestionsRoutes = require("./routes/prescreeningAnswerRoute");
 app.use("/prescreening-questions/", prescreeningQuestionsRoutes);
 
-const prescreeningAnswerRoutes = require("./routes/prescreening-answer-route");
+const prescreeningAnswerRoutes = require("./routes/prescreeningAnswerRoute");
 app.use("/prescreening-answers/", prescreeningAnswerRoutes);
 
-const userAnswerRoutes = require("./routes/user-answer-route");
+const userAnswerRoutes = require("./routes/userAnswerRoute");
 app.use("/user-answers/", userAnswerRoutes);
 
-const userInterestRoutes = require("./routes/user-interest-route");
+const userInterestRoutes = require("./routes/userInterestRoute");
 app.use("/user-interests/", userInterestRoutes);
 
 app.listen(PORT, () => {

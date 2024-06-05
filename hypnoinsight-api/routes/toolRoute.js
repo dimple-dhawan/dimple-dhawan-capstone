@@ -1,5 +1,5 @@
 const router =  require("express").Router();
-const toolController = require("../controllers/tool-controller");
+const toolController = require("../controllers/toolController");
 
 router
     .route("/")

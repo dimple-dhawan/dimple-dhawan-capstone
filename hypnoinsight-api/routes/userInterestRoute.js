@@ -1,5 +1,5 @@
 const router =  require("express").Router();
-const userInterestsController = require("../controllers/user-interest-controller");
+const userInterestsController = require("../controllers/userInterestController");
 
 router
     .route("/")
