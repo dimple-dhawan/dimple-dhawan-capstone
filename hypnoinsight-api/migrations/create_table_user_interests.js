@@ -32,13 +32,13 @@ exports.up = function (knex) {
             .onUpdate("CASCADE")
             .onDelete("CASCADE");
     })
-    .createTable('checklist_questions', (table) => {
+    .createTable('prescreening_questions', (table) => {
         table.increments('id').primary();
         table.string('question').notNullable();
         table.timestamp('created_at').defaultTo(knex.fn.now());
         table.timestamp('updated_at').defaultTo(knex.raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'))
     })
-    .createTable("checklist_answers", (table) => {
+    .createTable("prescreening_answers", (table) => {
         table.increments('id').primary();
         table.integer('question_id').unsigned().notNullable();
         table.string('answer').notNullable();
@@ -47,7 +47,7 @@ exports.up = function (knex) {
         table
             .foreign("question_id")
             .references("id")
-            .inTable("checklist_questions")
+            .inTable("prescreening_questions")
             .onUpdate("CASCADE")
             .onDelete("CASCADE");
     })
@@ -67,13 +67,13 @@ exports.up = function (knex) {
         table
             .foreign("question_id")
             .references("id")
-            .inTable("checklist_questions")
+            .inTable("prescreening_questions")
             .onUpdate("CASCADE")
             .onDelete("CASCADE");
         table
             .foreign("answer_id")
             .references("id")
-            .inTable("checklist_answers")
+            .inTable("prescreening_answers")
             .onUpdate("CASCADE")
             .onDelete("CASCADE");
     });
@@ -84,8 +84,8 @@ exports.down = function (knex) {
         .dropTable('user_interests')
         .dropTable('interests')
         .dropTable('user_answers')
-        .dropTable('checklist_answers')
-        .dropTable('checklist_questions')
+        .dropTable('prescreening_answers')
+        .dropTable('prescreening_questions')
         .dropTable("users");
   };
   
