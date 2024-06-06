@@ -1,0 +1,40 @@
+@use "../../styles/partials/colours" as *;
+
+.module-intro-container {
+    border: 1px solid $primary-purple;
+    border-radius: 9px;
+    padding: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.start-module {
+    border: 1px solid $secondary-orange;
+    border-bottom: 3px solid $secondary-orange;
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    margin-top: 1rem;
+    text-align: center;
+    width: 13rem;
+
+    &:hover {
+        font-weight: 600;
+        background-color: $secondary-orange;
+        color: $primary-white;
+    }
+}
+
+.show {
+    background-color: $secondary-darkpurple;
+    opacity: 40%;
+    display: block;
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+.hide {
+    display: hide;
+}

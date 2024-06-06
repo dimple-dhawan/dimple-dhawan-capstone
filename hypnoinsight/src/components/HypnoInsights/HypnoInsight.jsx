@@ -1,11 +1,21 @@
 import "./Hypnoinsights.scss";
+import LearningModule from "../LearningModule/LearningModule";
 
-function Hypnoinsights() {
+function HypnoInsights({closeModule}) {
+    const close = () => {
+        closeModule();
+    }
+
     return (
-        <header>
-            Learning Module
-        </header>
+        <section className="container">
+            <div 
+                className="close-button"
+                onClick={close}>
+                X
+            </div>
+            <LearningModule />
+        </section>
     )
 }
 
-export default Hypnoinsights;
+export default HypnoInsights;

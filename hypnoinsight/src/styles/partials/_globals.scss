@@ -28,3 +28,9 @@ main {
         @include desktop-container;
     }
 }
+
+h1 {
+    font-weight: 600;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
