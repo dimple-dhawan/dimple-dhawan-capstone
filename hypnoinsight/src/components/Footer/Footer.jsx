@@ -2,11 +2,10 @@ import "./Footer.scss";
 
 function Footer() {
     return (
-        <main>
-            Copyright @2024 Empowerment Voyage
-        </main>
+        <footer className="footer">
+            Copyright &copy;2024 Empowerment Voyage
+        </footer>
     )
-
 }
 
 export default Footer;

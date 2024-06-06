@@ -1,0 +1,22 @@
+
+
+@mixin mobile-main {
+    margin: 0 1rem;
+}
+
+@mixin tablet-main {
+    margin: 0 3rem;
+}
+
+@mixin desktop-main {
+    margin: 0 6rem;
+}
+
+@mixin desktop-container {
+    width:1280px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+}

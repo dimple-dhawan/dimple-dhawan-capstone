@@ -1,0 +1,30 @@
+@use "./fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/breakpoints" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+    @include desktop {
+       
+    }
+}
+
+
+main {
+    @include mobile-main;
+
+    @include tablet {
+        @include tablet-main;
+    }
+    
+    @include desktop {
+        @include desktop-main;
+        @include desktop-container;
+    }
+}

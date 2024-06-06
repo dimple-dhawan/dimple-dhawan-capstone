@@ -1,0 +1,123 @@
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.75rem;
+        
+    }
+
+    &__logo-img {
+        width: 3rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-style: italic;
+        color: #3C096C;
+        padding-top: 0.25rem;
+    }
+
+    &__nav {
+        background-color: $primary-purple;
+        color: $primary-white;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem 0;
+
+        a {
+            color: $primary-white;
+            text-decoration: none;
+
+            :hover {
+                border-bottom: 3px solid $secondary-orange;
+                font-weight: 600;
+            }
+        }
+    }
+
+    @include tablet {
+        margin-top: 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 2rem 1rem;
+        margin-bottom: 4rem;
+        border-bottom: 3px solid $primary-purple;
+
+        &__logo {
+            flex-direction: row;
+            align-items: center;
+            column-gap: 1rem;
+            height: 100%;
+            padding: 0;
+        }
+
+        &__logo-img {
+            width: 2.5rem;
+        }
+
+        &__title {
+            padding: 0;
+        }
+        
+        &__nav {
+            width: auto;
+            column-gap: 2rem;
+            background-color: $primary-white;
+            padding: 0;
+
+            a {
+                color: $primary-purple;
+
+                :hover {
+                    font-weight: 800;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    @include desktop {
+        margin: 1rem 2rem 4rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 3px solid $primary-purple;
+        @include desktop-container;
+
+        &__nav {
+            justify-content: space-between;
+            column-gap: 2rem;
+            width: auto;
+        }
+    }
+}
+
+.active {
+    border-bottom: 3px solid $primary-yellow;
+    font-weight: 500;
+
+    @include tablet {
+        border-bottom: 3px solid $secondary-orange;
+        font-weight: 700;
+    }
+}
+
+.inactive {
+    border-bottom: none;
+    font-weight: 300;
+
+    @include tablet {
+        font-weight: 400;
+    }
+}

@@ -6,7 +6,6 @@ function Hypnoinsights() {
             Learning Module
         </header>
     )
-
 }
 
 export default Hypnoinsights;
