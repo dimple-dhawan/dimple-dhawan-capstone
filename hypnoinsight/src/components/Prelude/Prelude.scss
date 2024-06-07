@@ -10,7 +10,7 @@
     display: flex;
     justify-content: flex-end;
 
-    &__next {
+    &__start-learning {
         border: 1px solid $secondary-orange;
         border-bottom: 3px solid $secondary-orange;
         @include button;

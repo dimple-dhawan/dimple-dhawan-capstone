@@ -1,15 +1,15 @@
 import "./Hypnoinsights.scss";
 import NewUserForm from "../NewUserForm/NewUserForm";
-import LearningModule from "../LearningModule/LearningModule";
+import Prelude from "../Prelude/Prelude";
 import { useState } from "react";
+import LearningModule from "../LearningModule/LearningModule";
 
 function HypnoInsights({ closeModule }) {
-  const [startUser, setStartUser] = useState(true)
+  const [startUser, setStartUser] = useState(true);
+  const [startLearning, setStartLearning] = useState(false);
   const close = () => {
     closeModule();
   };
-
-  
 
   return (
     <section className="hypno-section">
@@ -20,8 +20,15 @@ function HypnoInsights({ closeModule }) {
         </div>
       </div>
       <div className="hypno__content">
-        { startUser && <NewUserForm setStartUser={setStartUser} closeModule={closeModule}/> }
-        { !startUser && <LearningModule /> }
+        { startUser && <NewUserForm 
+          setStartUser={setStartUser} 
+          closeModule={closeModule} /> 
+        }
+        { !startUser && !startLearning && <Prelude 
+          setStartLearning={setStartLearning}/> 
+        }
+        { !startUser && startLearning && <LearningModule /> }
+        
       </div>
 
     </section>
