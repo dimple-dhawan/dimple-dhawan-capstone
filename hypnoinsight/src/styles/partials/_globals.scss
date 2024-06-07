@@ -23,8 +23,8 @@ main {
     }
 
     @include desktop {
-        @include desktop-main;
         @include desktop-container;
+        @include desktop-main;
     }
 }
 

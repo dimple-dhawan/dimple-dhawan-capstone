@@ -1,4 +1,5 @@
 @use "../../styles/partials/colours" as *;
+@use "../../styles/partials/breakpoints" as *;
 
 .hypno-section {
     position: fixed;
@@ -38,6 +39,18 @@
 
     &__content {
         margin: 0 1.75rem;
+    }
+
+    @include tablet {
+        &__content {
+            margin: 0 3rem;
+        }
+    }
+
+    @include desktop {
+        &__content {
+            margin: 0 9rem;
+        }
     }
 
 }

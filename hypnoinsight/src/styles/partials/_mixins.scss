@@ -9,11 +9,11 @@
 }
 
 @mixin desktop-main {
-    margin: 0 6rem;
+    margin: 0 9rem;
 }
 
 @mixin desktop-container {
-    width: 1280px;
+    //width: 1280px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -28,6 +28,7 @@
 
 @mixin module-content {
     margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 @mixin button {

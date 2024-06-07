@@ -75,10 +75,10 @@ function NewUserForm({setStartUser, closeModule}) {
     return (
         <section>
             <h2>Your details</h2>
-            <div className="form__instructions">
-                Please enter the following:
-            </div>
             <form className="form" onSubmit={handleSubmit}>
+                <div className="form__instructions">
+                    Please enter the following:
+                </div>
                 <div className="form__input">
                     <label htmlFor="first-name" className="first-name__label">First Name</label>
                     <input 
