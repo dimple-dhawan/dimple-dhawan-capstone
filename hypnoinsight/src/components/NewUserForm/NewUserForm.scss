@@ -1,6 +1,7 @@
 @use "../../styles/partials/globals" as *;
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/globals" as *;
 
 .form {
     @include module-content;
@@ -14,13 +15,13 @@
         margin-top: 1rem;
         border-radius: 14px;
     }
-}
 
-.btn {
-    margin: 1.5rem 1rem;
-    display: flex;
-    justify-content: flex-end;
-    column-gap: 0.75rem;
+    &__buttons {
+        margin: 1.5rem 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 0.75rem;
+    }
 
     &__begin {
         border: 1px solid $secondary-orange;
@@ -36,6 +37,27 @@
     }
 }
 
+
 .error {
     border: 3px solid red !important;
+}
+
+.server-error {
+    color: red;
+    font-weight: 600;
+
+    &__details {
+        display: block;
+    }
+
+}
+
+.show-error {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.hide-error {
+    display: none;
 }

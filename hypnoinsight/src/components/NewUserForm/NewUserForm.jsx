@@ -9,6 +9,7 @@ function NewUserForm({setStartUser, closeModule}) {
     const [firstNameError, setFirstNameError] = useState(false);
     const [lastNameError, setLastNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
+    const [isServerError, setIsServerERror] = useState(false);
     const SERVER_URL = process.env.REACT_APP_SERVER_URL + '/users';
 
     const handleSubmit = async (event) => {
@@ -26,17 +27,15 @@ function NewUserForm({setStartUser, closeModule}) {
             email: email
         }
 
-        console.log (SERVER_URL, newUserObj);
-
         try {
             await axios.post(SERVER_URL, newUserObj)
             .then(() => {
-                console.log ("Inserted ");
                 setStartUser(false);
             });
             
         } catch (error) {
             console.error(`Could not add new user: ${error}`);
+            setIsServerERror(true);
         }
     }
 
@@ -110,18 +109,22 @@ function NewUserForm({setStartUser, closeModule}) {
                         onChange={ event => setEmail(event.target.value) }
                     />
                 </div>
-                <div className="btn">
+                <div className="form__buttons">
                     <button 
-                        className="btn__cancel"
+                        className="form__cancel"
                         onClick={closeModule}>
                         Cancel
                     </button>
                     <button 
-                        className="btn__begin">
+                        className="form__begin">
                         Next
                     </button>
                 </div>
             </form>
+            <div className={"server-error" + (isServerError ? ' show-error' : ' hide-error')}>
+                Server Error:
+                <span className="server-error__details">Unable to save user info.</span>
+            </div>
         </section>
     )
 }
