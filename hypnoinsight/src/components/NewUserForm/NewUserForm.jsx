@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./NewUserForm.scss";
+import axios from "axios";
 
 function NewUserForm({setStartUser, closeModule}) {
     const [firstName, setFirstName] = useState("");
@@ -8,14 +9,35 @@ function NewUserForm({setStartUser, closeModule}) {
     const [firstNameError, setFirstNameError] = useState(false);
     const [lastNameError, setLastNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
+    const SERVER_URL = process.env.REACT_APP_SERVER_URL + '/users';
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
         if (isValid()) {
-            setStartUser(false);
+            saveNewUser();
+        }
+    }
+
+    const saveNewUser = async () => {
+        const newUserObj = {
+            first_name: firstName,
+            last_name: lastName,
+            email: email
         }
 
+        console.log (SERVER_URL, newUserObj);
+
+        try {
+            await axios.post(SERVER_URL, newUserObj)
+            .then(() => {
+                console.log ("Inserted ");
+                setStartUser(false);
+            });
+            
+        } catch (error) {
+            console.error(`Could not add new user: ${error}`);
+        }
     }
 
     const isValid = () => {
