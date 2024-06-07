@@ -10,7 +10,7 @@ function LearningModule() {
              </div>
 
 
-            <div class="btn">
+            <div className="btn">
                 <div className="btn__next">Next</div>
                 
             </div>

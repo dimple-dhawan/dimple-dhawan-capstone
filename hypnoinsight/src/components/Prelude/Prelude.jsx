@@ -18,7 +18,7 @@ function Prelude({setStartLearning}) {
             <div className="welcome">
                 Enjoy!
             </div>
-            <div class="btn">
+            <div className="btn">
                 <div 
                     className="btn__start-learning"
                     onClick={startLearningNow}
