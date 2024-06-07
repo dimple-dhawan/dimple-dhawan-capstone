@@ -3,10 +3,11 @@
 @use "../../styles/partials/mixins" as *;
 
 .form {
-    margin-left: 1rem;
+    @include module-content;
 
     &__instructions {
         margin-bottom: 1.5rem;
+        @include module-content;
     }
 
     &__input {

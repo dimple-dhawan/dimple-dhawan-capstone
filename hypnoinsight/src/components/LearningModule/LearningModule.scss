@@ -1,3 +1,25 @@
-.module-container {
-    padding: 0 2rem;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+
+.welcome {
+    @include module-content;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+
+    &__start-learning {
+        border: 1px solid $secondary-orange;
+        border-bottom: 3px solid $secondary-orange;
+        @include button;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            @include btn-vital;
+        }
+    }
 }

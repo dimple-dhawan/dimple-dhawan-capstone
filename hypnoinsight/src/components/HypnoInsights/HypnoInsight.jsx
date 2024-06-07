@@ -9,6 +9,8 @@ function HypnoInsights({ closeModule }) {
     closeModule();
   };
 
+  
+
   return (
     <section className="hypno-section">
       <div className="hypno__header">
@@ -18,7 +20,7 @@ function HypnoInsights({ closeModule }) {
         </div>
       </div>
       <div className="hypno__content">
-        { startUser && <NewUserForm closeModule={closeModule}/> }
+        { startUser && <NewUserForm setStartUser={setStartUser} closeModule={closeModule}/> }
         { !startUser && <LearningModule /> }
       </div>
 

@@ -25,3 +25,15 @@
     background-color: $secondary-orange;
     color: $primary-white;
 }
+
+@mixin module-content {
+    margin-left: 1rem;
+}
+
+@mixin button {
+    width: 5.5rem;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    outline: none;
+}
