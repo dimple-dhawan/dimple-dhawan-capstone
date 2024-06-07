@@ -1,6 +1,6 @@
 @use "../../styles/partials/colours" as *;
 
-.container {
+.hypno-section {
     position: fixed;
     top: 0;
     right: 0;
@@ -12,16 +12,34 @@
     background-color: $primary-white;
     margin: auto;
     z-index: 2;
-
     box-shadow:
-        inset $primary-purple 0 0 0 5px, 
-        inset #ae76d6 0 0 0 1px, 
-        inset $secondary-orange 0 0 0 6px, 
-        inset #754796 0 0 0 11px, 
-        inset #be6af9 0 0 0 16px, 
-        inset #c99de9 0 0 0 17px, 
-        inset #e1c7f4 0 0 0 21px, 
+        inset $primary-purple 0 0 0 5px,
+        inset #9566b7 0 0 0 1px,
+        inset $secondary-orange 0 0 0 6px,
+        inset #9132d4 0 0 0 11px,
+        inset #af79d6 0 0 0 16px,
+        inset #b392cb 0 0 0 17px,
+        inset #d0bcdf 0 0 0 21px,
         inset #e4dee8 0 0 0 22px;
+}
+
+.hypno {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        padding: 1rem 1.5rem 1rem;
+    }
+
+    &__product {
+        padding: 0.25rem 0 0 0.25rem;
+        font-weight: 400;
+    }
+
+    &__content {
+        margin: 0 1.75rem;
+    }
+
 }
 
 .close-button {
@@ -29,6 +47,5 @@
     justify-content: flex-end;
     font-size: 1.5rem;
     font-weight: 600;
-    padding: 1rem 1.5rem 0 0;
     cursor: pointer;
 }

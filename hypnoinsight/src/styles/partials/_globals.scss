@@ -1,6 +1,7 @@
 @use "./fonts" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colours" as *;
 
 * {
     margin: 0;
@@ -10,9 +11,7 @@
 }
 
 body {
-    @include desktop {
-       
-    }
+    @include desktop {}
 }
 
 
@@ -22,7 +21,7 @@ main {
     @include tablet {
         @include tablet-main;
     }
-    
+
     @include desktop {
         @include desktop-main;
         @include desktop-container;
@@ -33,4 +32,23 @@ h1 {
     font-weight: 600;
     font-size: 2rem;
     padding-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    margin-top: 0.1875rem;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+button {
+    width: 5.5rem;
+    height: 28px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    outline: none;
+
 }

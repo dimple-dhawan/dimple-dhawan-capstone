@@ -23,12 +23,12 @@ function Booknow() {
                 <div>
                 Complete this Understanding Hypnosis mini-course to answer your questions, dispell myths and learn interesting facts about hypnosis.   After going through this mini-course, you'll better understand if you are ready for hypnosis now to achieve your goals and if hypnosis is right for you at this time.
                 </div>
-                <button 
+                <div 
                     className="start-module"
                     onClick={startModule}
                 >
                     Understanding Hypnosis
-                </button>
+                </div>
                 <div className="hypno-insight">
                     {moduleOpen && <HypnoInsights closeModule={closeModule}/> }
                 </div>

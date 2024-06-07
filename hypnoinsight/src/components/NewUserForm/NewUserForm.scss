@@ -1,0 +1,40 @@
+@use "../../styles/partials/globals" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/mixins" as *;
+
+.form {
+    margin-left: 1rem;
+
+    &__instructions {
+        margin-bottom: 1.5rem;
+    }
+
+    &__input {
+        margin-top: 1rem;
+        border-radius: 14px;
+    }
+}
+
+.btn {
+    margin: 1.5rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 0.75rem;
+
+    &__begin {
+        border: 1px solid $secondary-orange;
+        border-bottom: 3px solid $secondary-orange;
+
+        &:hover {
+            @include btn-vital;
+        }
+    }
+
+    &__cancel {
+        border: 1px solid;
+    }
+}
+
+.error {
+    border: 3px solid red !important;
+}
