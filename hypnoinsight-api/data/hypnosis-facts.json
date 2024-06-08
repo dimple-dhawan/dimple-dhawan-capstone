@@ -3,7 +3,7 @@
         "id": "1",
         "statement": "What is hypnosis?",
         "details": "Hypnosis is a state of deep relaxation and focused concentration.  Hypnosis is also called hypnotherapy.",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "2",
@@ -21,14 +21,14 @@
         "id": "4",
         "statement": "Hypnotherapy is considered to be a safe treatment when performed by a trained practitioner.",
         "details": "Hypnotherapy can have a calming effect on regions of the brain that control breathing, heart rate and other autonomic functions, leading to a state of deep relaxation. ",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "5",
         "statement": "Who is a good candidate for hypnotherapy?",
         "details": "Good hypnosis clients are those that are of average or higher intelligence, have the ability to focus their mind, and can follow simple step-by-step instructions. ",
         "details-1": "The best hypnosis clients may be those with a capacity for creativity and a vivid  imagination, such as having the ability to get drawan into a movie or book.",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "6",
@@ -84,7 +84,7 @@
         "id": "14",
         "statement": "All hypnosis is self-hypnosis.",
         "details": "A hypnotherapist can give you a therapeutic hypnotic suggestion and it is up to you to follow the suggestion.  ",
-        "type": "did-you-know"
+        "type": "fact"
     },
     {
         "id": "15",
@@ -152,14 +152,14 @@
         "statement": "What is the unconscious mind?",
         "details": "The unconscious mind is highly intelligent.   It can be very spontaneous and youthful.  It is not always logical or consistent.   It controls the autonomic body functions such as your heart, breathing and your immmune system.",
         "details-1": "The unconscious mind can include repressed feelings, hidden and long-term memories, habits, thoughts, desires, and reactions.  Your unconscious mind is responsible for 90% of your brains processing power.  Up to 90% of your decison-making, thoughts and behaviours is unconscious.  ",
-        "type": "did-you-know"
+        "type": "fact"
     },
     {
         "id": "26",
         "statement": "What is the conscious mind?",
         "details": "The conscious mind is involves all the things you are currently aware of and thinking about.  The conscious mind is responsible for short term memory and will power. ",
         "details-1": "The conscious mind helps you understand when there's a problem that you cannot solve but these solutions are not found Win the conscious mind.  ",
-        "type": "did-you-know"
+        "type": "fact"
     },
     {
         "id": "27",
