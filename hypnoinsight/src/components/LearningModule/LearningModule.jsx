@@ -14,6 +14,7 @@ function LearningModule() {
     const [progress, setProgress] = useState(0);
     const [factsCompleted, setFactsCompleted] = useState(false);
     const [mythsCompleted, setMythsCompleted] = useState(false);
+    const [nuggetCompleted, setNuggetCompleted] = useState(false);
 
     const [showFacts, setShowFacts] = useState(true);
     const [showMyths, setShowMyths] = useState(false);
@@ -52,7 +53,6 @@ function LearningModule() {
         setShowMyths(false);
         setCelebrateMythsMilestone(true);
         setCategory(category+1);
-        console.log("in mythCongrats");
     }
 
     const isLastFact = () => {
@@ -89,9 +89,9 @@ function LearningModule() {
         if (!showFacts) {
             if (isLastMyth() && showMyths) {
                 mythsCongrats();
-            } else if (!isLastFact() && showMyths ) {
+            } else if (!isLastMyth() && showMyths ) {
                 nextMythPage();
-            } else if (isLastMyth && !showMyths) {
+            } else if (isLastMyth() && !showMyths) {
                 console.log ("myths 3");
             }
         }
@@ -129,7 +129,11 @@ function LearningModule() {
     return (
         <section className="learn">
             <div className="star-progress">
-                <Stars factsCompleted={factsCompleted} />
+                <Stars 
+                    factsCompleted={factsCompleted} 
+                    mythsCompleted={mythsCompleted} 
+                    nuggetCompleted={nuggetCompleted} 
+                />
             </div>
 
             <h1 className={"showCategory" + ((showFacts || showMyths) ? '' : ' hide-category') } >
@@ -150,13 +154,13 @@ function LearningModule() {
 
              <div className={"showMyths" + (showMyths ? '' : ' hide-myths' )} >
                 <div className="learn__statement">
-                    { hypnosisMyths[factPage].statement }
+                    { hypnosisMyths[mythPage].statement }
                 </div>
                 <div className="learn__details">
-                    { hypnosisMyths[factPage].details }
+                    { hypnosisMyths[mythPage].details }
                 </div>
                 <div className="learn__details">
-                    { hypnosisMyths[factPage].details1 }
+                    { hypnosisMyths[mythPage].details1 }
                 </div>
              </div>
 

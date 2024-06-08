@@ -3,7 +3,7 @@
 
 
 .milestone {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     &__facts {
         border: 1px solid magenta;
@@ -16,6 +16,10 @@
 
     &__completed-text {
         padding-bottom: 0.75rem;
+    }
+
+    &__next-text {
+        padding-top: 0.75rem;
     }
 }
 
