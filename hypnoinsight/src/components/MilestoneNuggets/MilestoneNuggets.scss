@@ -10,6 +10,8 @@
         padding: 1.5rem 1rem;
         border-radius: $module-border-radius;
         margin-bottom: 3rem;
+        font-weight: 300;
+        font-size: 13px;
     }
 
     &__completed-text {
@@ -21,10 +23,21 @@
     }
 }
 
+.email {
+    color: $primary-white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
 .showFactsCongrats {
     display: block;
 }
 
 .hideFactsCongrats {
     display: none;
+}
+
+.completion-code {
+    font-weight: 500;
+    font-style: italic;
 }

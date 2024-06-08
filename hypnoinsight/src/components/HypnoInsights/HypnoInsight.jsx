@@ -27,7 +27,7 @@ function HypnoInsights({ closeModule }) {
         { !startUser && !startLearning && <Prelude 
           setStartLearning={setStartLearning}/> 
         }
-        { !startUser && startLearning && <LearningModule /> }
+        { !startUser && startLearning && <LearningModule close={close} /> }
         
       </div>
 
