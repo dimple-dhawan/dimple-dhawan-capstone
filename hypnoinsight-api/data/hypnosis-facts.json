@@ -3,7 +3,7 @@
         "id": "1",
         "statement": "What is hypnosis?",
         "details": "Hypnosis is a state of deep relaxation and focused concentration.  Hypnosis is also called hypnotherapy.",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "2",
@@ -21,14 +21,14 @@
         "id": "4",
         "statement": "Hypnotherapy is considered to be a safe treatment when performed by a trained practitioner.",
         "details": "Hypnotherapy can have a calming effect on regions of the brain that control breathing, heart rate and other autonomic functions, leading to a state of deep relaxation. ",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "5",
         "statement": "Who is a good candidate for hypnotherapy?",
         "details": "Good hypnosis clients are those that are of average or higher intelligence, have the ability to focus their mind, and can follow simple step-by-step instructions. ",
         "details-1": "The best hypnosis clients may be those with a capacity for creativity and a vivid  imagination, such as having the ability to get drawan into a movie or book.",
-        "type": "facts"
+        "type": "fact"
     },
     {
         "id": "6",
@@ -132,7 +132,7 @@
     {
         "id": "22",
         "statement": "Sigmund Freud practiced Hypnosis.",
-        "details": "Freud used hypnosis for many years.  He faced difficulty in hypnotizing many patients because he failed to realize that the client, not the hypnotherapist, is in control of their use and 'depth' of hypnosis.  There is little doubt now that Freud’s failure with hypnosis was largely due to his personality.  ",
+        "details": "Freud used hypnosis for many years.  He faced difficulty in hypnotizing many patients because he failed to realize that the client, not the hypnotherapist, is in control of their use and 'depth' of hypnosis.  Freud’s failure with hypnosis was largely due to his personality, and not hypnosis itself.  ",
         "type": "did-you-know"
     },
     {
