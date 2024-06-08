@@ -41,6 +41,11 @@
 }
 
 @mixin tablet-celebrate-bubble {
+    margin-top: 1.25rem;
+    padding: 1.5rem;
+}
+
+@mixin desktop-celebrate-bubble {
     margin-top: 2rem;
     padding: 1.5rem;
 }
