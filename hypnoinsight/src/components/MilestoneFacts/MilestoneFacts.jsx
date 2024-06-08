@@ -4,11 +4,11 @@ function MilestoneFacts ({factsCompleted}) {
     return (
         <section className="milestone">
             <div className="milestone__facts">
-                <h2>Well done!</h2>
-                <div className="milestone__completed-text"> 
+                <h1 className="milestone__celebrate-title">Well done!</h1>
+                <div className="milestone__celebrate-text"> 
                     You have completed the Hypnosis Facts module. 
                 </div>
-                <div className="milestone__continue-text"> 
+                <div className="milestone__celebrate-text"> 
                     Next up is Hypnosis Myths.  Keep learning!   
                 </div>
             </div>

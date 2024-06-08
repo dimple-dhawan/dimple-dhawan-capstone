@@ -128,7 +128,7 @@ function LearningModule({close}) {
             }
         }
 
-        if (!showMyths) {
+        if (!showMyths) {   
             if (isLastNugget() && showNuggets) {
                 nuggetCongrats();
             } else if (!isLastNugget() && showNuggets ) {
@@ -137,10 +137,6 @@ function LearningModule({close}) {
                 close();
             }
         }
-    }
-
-    const completedModule = () => {
-        return !showFacts && !showMyths && !showNuggets;
     }
 
     useEffect(() => {
@@ -193,11 +189,11 @@ function LearningModule({close}) {
                 />
             </div>
 
-            <h1 className={"showCategory" + ((showFacts || showMyths || showNuggets) ? '' : ' hide-category') } >
+            <h1 className={"learn__category" + ((showFacts || showMyths || showNuggets) ? '' : ' hide-category') } >
                 { categories[category] }
             </h1>
 
-            <div className={"showFacts" + (showFacts ? '' : ' hide-facts' )} >
+            <div className={"learn__facts" + (showFacts ? '' : ' hide-facts' )} >
                 <div className="learn__statement">
                     { hypnosisFacts[factPage].statement }
                 </div>
@@ -242,7 +238,7 @@ function LearningModule({close}) {
                     className="btn__next"
                     onClick={ nextStep }
                 >
-                    {completedModule() ? "Close" : "Next" }
+                    {celebrateNuggetsMilestone ? "Close" : "Next" }
                 </div>
             </div>
         </section>

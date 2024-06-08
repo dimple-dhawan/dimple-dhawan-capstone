@@ -39,3 +39,8 @@
     outline: none;
     cursor: pointer;
 }
+
+@mixin tablet-celebrate-bubble {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}

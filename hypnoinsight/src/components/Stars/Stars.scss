@@ -1,5 +1,6 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/globals" as *;
+@use "../../styles/partials/breakpoints" as *;
 
 .stars {
     display: flex;
@@ -9,5 +10,19 @@
     &__star {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    @include tablet {
+        &__star {
+            width: auto;
+            height: auto;
+        }
+    }
+
+    @include desktop {
+        &__star {
+            width: 36px;
+            height: 36px;
+        }
     }
 }

@@ -22,6 +22,10 @@
         inset #b392cb 0 0 0 17px,
         inset #d0bcdf 0 0 0 21px,
         inset #e4dee8 0 0 0 22px;
+
+    @include tablet {
+        padding: 0 1.5rem;
+    }
 }
 
 .hypno {
@@ -29,12 +33,13 @@
         display: flex;
         justify-content: space-between;
         padding-top: 1rem;
-        padding: 1rem 1.5rem 1rem;
+        padding: 1rem 1.5rem 1.5rem;
     }
 
     &__product {
         padding: 0.25rem 0 0 0.25rem;
         font-weight: 400;
+        font-size: 14px;
     }
 
     &__content {
@@ -42,6 +47,10 @@
     }
 
     @include tablet {
+        &__header {
+            padding: 1rem 0 1.5rem 0rem;
+        }
+
         &__content {
             margin: 0 3rem;
         }
@@ -58,7 +67,7 @@
 .close-button {
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
 }

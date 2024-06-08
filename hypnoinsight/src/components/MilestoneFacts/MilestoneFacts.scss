@@ -1,8 +1,19 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/globals" as *;
-
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/mixins" as *;
 
 .milestone {
+    &__celebrate-title {
+        font-size: $mobile-celebrate-title;
+        padding-bottom: 0;
+    }
+
+    &__celebrate-text {
+        font-size: $mobile-celebrate-text;
+        padding-top: $mobile-celebrate-padding-top
+    }
+
     &__facts {
         border: 1px solid magenta;
         background-color: $secondary-orange;
@@ -10,10 +21,25 @@
         padding: 1.5rem 1rem;
         border-radius: $module-border-radius;
         margin-bottom: 3rem;
+        margin-top: $mobile-celebrate-margin-top;
+
     }
 
-    &__completed-text {
-        padding-bottom: 0.75rem;
+    @include tablet {
+        &__celebrate-title {
+            font-size: $tablet-celebrate-title;
+            padding-bottom: 0;
+        }
+
+        &__celebrate-text {
+            font-size: $tablet-celebrate-text;
+            padding-top: $tablet-celebrate-padding-top;
+        }
+
+        &__facts {
+            @include tablet-celebrate-bubble;
+        }
+
     }
 }
 

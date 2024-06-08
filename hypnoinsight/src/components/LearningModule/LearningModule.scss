@@ -1,9 +1,62 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
+@use "../../styles/partials/breakpoints" as *;
 
 .welcome {
     @include module-content;
     margin-bottom: 1rem;
+}
+
+.learn {
+    &__category {
+        font-size: 24px;
+        padding-bottom: 0.75rem;
+    }
+
+    &__statement {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+    }
+
+    &__details {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    @include tablet {
+        &__category {
+            font-size: 28px;
+            padding-bottom: 0.75rem;
+            margin-top: 2rem;
+        }
+
+        &__statement {
+            font-size: 20px;
+        }
+
+        &__details {
+            font-size: 16px;
+        }
+    }
+
+    @include desktop {
+        &__category {
+            font-size: 32px;
+            padding-bottom: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        &__statement {
+            font-size: 24px;
+            margin-bottom: 0.75rem;
+        }
+
+        &__details {
+            font-size: 16px;
+        }
+    }
 }
 
 .btn {
@@ -17,27 +70,24 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        top: 500px;
+
+        @include tablet {
+            bottom: 0px;
+            right: 115px;
+            top: 435px;
+        }
+
+        @include desktop {
+            bottom: 0px;
+            right: 234px;
+            top: 450px;
+        }
 
         &:hover {
             @include btn-vital;
         }
-    }
-}
-
-.learn {
-
-    &__statement {
-        margin-bottom: 1.25rem;
-        font-size: 17px;
-        font-weight: 300;
-    }
-
-    &__details {
-        margin-bottom: 2rem;
-    }
-
-    &__more {
-        margin-bottom: 2rem;
     }
 }
 
