@@ -45,8 +45,8 @@
     },
     {
         "id": "8",
-        "statement": "The hypnotherapist will make you bark like a dog or do something embarassing.",
-        "details": "False!  You are in control at all times.  Your hypnotherapist is your guide for hypnosis.  The hypnotherapist is like the navigation system that tells you where to go, and you can decide whether to go or not.  You can't be made to do anything against your morals, values or will.",
+        "statement": "The hypnotherapist will make you do something embarassing.",
+        "details": "False!  You are in control at all times.  The hypnotherapist is like the navigation system that tells you where to go, and you can decide whether to go or not.  You can't be made to do anything against your morals, values or will.",
         "type": "myth"
     },
     {
@@ -100,8 +100,8 @@
     },
     {
         "id": "17",
-        "statement": "Hypnosis may not be appropriate for people with severe mental health issues such as psychotic symptoms, including hallucinations and delusions. ",
-        "details": "If you have a serious mental illness, please contact a doctor before considering hypnosis for any non-mental illness related issues.   A doctor's note may be required.  ",
+        "statement": "Hypnosis may not be appropriate for people with severe mental health issues.",
+        "details": "If you have a serious mental illness such as psychotic symptoms, including hallucinations and delusions, please contact a doctor before considering hypnosis for any non-mental illness related issues.",
         "type": "fact"
     },
     {
@@ -131,8 +131,8 @@
     },
     {
         "id": "22",
-        "statement": "Sigmund Freud Learned Hypnosis before he developed psychoanalysis.",
-        "details": "Freud used hypnosis for many years.  He faced difficulty in hypnotizing many patients because he grossly misunderstood the nature of hypnosis.  He failed to realize that the client, not the hypnotherapist, is in control of their use and 'depth' of hypnosis.  He failed to have lasting results in many of his clients that he did hypnotize.  There is little doubt now that Freud’s failure with hypnosis was largely due to his personality.  ",
+        "statement": "Sigmund Freud practiced Hypnosis.",
+        "details": "Freud used hypnosis for many years.  He faced difficulty in hypnotizing many patients because he failed to realize that the client, not the hypnotherapist, is in control of their use and 'depth' of hypnosis.  There is little doubt now that Freud’s failure with hypnosis was largely due to his personality.  ",
         "type": "did-you-know"
     },
     {
