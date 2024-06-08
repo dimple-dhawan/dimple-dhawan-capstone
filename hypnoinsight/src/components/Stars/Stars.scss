@@ -1,0 +1,16 @@
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/globals" as *;
+
+.stars {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    &__star {
+        width: 1.5rem;
+    }
+}
+
+.small-yellow-star {
+    padding-left: 1rem;
+}

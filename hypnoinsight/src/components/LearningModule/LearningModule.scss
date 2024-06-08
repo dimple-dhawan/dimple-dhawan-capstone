@@ -23,3 +23,32 @@
         }
     }
 }
+
+.learn {
+
+    &__statement {
+        margin-bottom: 1.25rem;
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    &__details {
+        margin-bottom: 2rem;
+    }
+
+    &__more {
+        margin-bottom: 2rem;
+    }
+}
+
+.star-progress {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.hide-facts,
+.hide-myths,
+.hide-category {
+    display: none;
+}

@@ -21,7 +21,7 @@
     }
 
     &__title {
-        font-size: 1.5rem;
+        font-size: 22px;
         font-weight: 700;
         font-style: italic;
         color: #3C096C;
@@ -65,7 +65,7 @@
         &__title {
             padding: 0;
         }
-        
+
         &__nav {
             width: auto;
             column-gap: 0.5rem;
@@ -97,7 +97,10 @@
     }
 }
 
-.nav__home, .nav__services, .nav__book {
+.nav__home,
+.nav__services,
+.nav__book {
+    font-size: 14px;
     width: 5.5rem;
     height: 1.5rem;
     text-align: center;
@@ -120,7 +123,7 @@ a.active {
     text-underline-offset: 0.5rem;
     font-weight: 500;
 
-     &:hover {
+    &:hover {
         text-decoration-color: $secondary-orange;
         font-weight: 600;
     }
@@ -171,7 +174,7 @@ a.inactive {
         font-weight: 400;
         border-bottom: 3px solid $primary-white;
         border-radius: 4px;
-       
+
         &:hover {
             border-bottom: none;
             text-decoration: none;
@@ -181,7 +184,7 @@ a.inactive {
             border-radius: 4px;
         }
     }
-    
+
     @include desktop {
         font-weight: 400;
         border-bottom: 3px solid $primary-white;

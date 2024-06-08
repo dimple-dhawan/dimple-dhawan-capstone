@@ -1,0 +1,28 @@
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/globals" as *;
+
+
+.milestone {
+    margin-top: 2rem;
+
+    &__facts {
+        border: 1px solid magenta;
+        background-color: $secondary-orange;
+        color: $primary-white;
+        padding: 1.5rem 1rem;
+        border-radius: $module-border-radius;
+        margin-bottom: 3rem;
+    }
+
+    &__completed-text {
+        padding-bottom: 0.75rem;
+    }
+}
+
+.showFactsCongrats {
+    display: block;
+}
+
+.hideFactsCongrats {
+    display: none;
+}
