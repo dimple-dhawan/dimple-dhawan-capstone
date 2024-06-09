@@ -108,6 +108,7 @@
     @include tablet {
         width: 6rem;
         text-align: center;
+        font-size: 16px;
     }
 
     @include desktop {

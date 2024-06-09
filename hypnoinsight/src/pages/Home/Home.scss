@@ -3,7 +3,7 @@
 @use "../../styles/partials/breakpoints" as *;
 @use "../../styles/partials/colours" as *;
 
-.welcome {
+.home {
     @include pages-content;
 
     &__headline {
@@ -18,17 +18,6 @@
         font-weight: 300;
         padding-bottom: 1.5rem;
         font-weight: 600;
-    }
-
-    &__introduction {
-        font-weight: 300;
-    }
-
-    &__greeting {
-        color: $primary-purple;
-        font-weight: 600;
-        font-size: 24px;
-        padding-right: 0.5rem;
     }
 
     &__why-title {
@@ -46,11 +35,86 @@
         padding-right: 0.5rem;
     }
 
+    @include tablet {
+        &__headline {
+            font-size: 28px;
+        }
+
+        &__subheadline {
+            font-size: 20px;
+            padding-bottom: 2.5rem;
+        }
+
+        &__greeting {
+            font-size: 28px;
+        }
+
+        &__why-title {
+            clear: both;
+            margin-top: 2.5rem;
+            font-size: 18px;
+        }
+
+        &__benefits {
+            font-size: 16px;
+        }
+    }
 }
 
-.profile-photo {
-    width: 9rem;
-    border-radius: $border-radius;
-    float: left;
-    margin: 1rem 1.5rem 0rem 0;
+.welcome {
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+
+    &__greeting {
+        color: $primary-purple;
+        font-weight: 600;
+        font-size: 26px;
+        padding-right: 0.5rem;
+    }
+
+    &__profile {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    @include tablet {
+        &__greeting {
+            font-size: 28px;
+        }
+
+        &__intro-profile-container {
+            display: flex;
+
+        }
+
+        &__introduction {
+            padding-top: 2rem;
+            order: 2;
+        }
+
+        &__profile {
+            padding: 0 2rem 1.25rem 0;
+            order: 1;
+        }
+
+    }
+}
+
+.profile {
+
+    &__photo {
+        width: 14rem;
+        border-radius: $module-border-radius;
+        display: flex;
+        justify-content: center;
+
+
+
+        @include tablet {
+            width: 18rem;
+        }
+    }
 }

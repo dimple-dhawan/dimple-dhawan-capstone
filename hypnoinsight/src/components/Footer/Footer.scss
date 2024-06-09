@@ -14,7 +14,6 @@
 
     &__tag {
         font-size: 14px;
-        //text-align: left;
     }
 
     &__booknow {
@@ -22,7 +21,7 @@
         background-color: $primary-purple;
         color: $primary-white;
         display: flex;
-        margin: 1rem auto 2rem;
+        margin: 1rem auto 3rem;
         padding: 0.5rem 1rem;
 
         width: fit-content;
