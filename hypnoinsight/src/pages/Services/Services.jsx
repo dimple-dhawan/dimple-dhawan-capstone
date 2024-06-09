@@ -10,7 +10,7 @@ function Services() {
             <div className="services__subheadline">
                 Transform your life with our expert hypnosis services.
             </div>
-            <div services_introduction>
+            <div className="services_introduction">
                 We provide customized hypnosis programs to help you achieve a variety of personal goals, from quitting smoking and losing weight to managing stress and improving sleep. Start your journey to a better you with us today.
             </div>
 
@@ -46,7 +46,6 @@ function Services() {
             </div>
         </main>
     )
-
 }
 
 export default Services;
