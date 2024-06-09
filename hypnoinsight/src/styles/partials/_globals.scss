@@ -11,7 +11,7 @@
 }
 
 body {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 
@@ -60,6 +60,9 @@ button {
     @include button;
 }
 
+li {
+    padding-bottom: 0.5rem;
+}
 
 $border-radius: 4px;
 $module-border-radius: 12px;
@@ -73,4 +76,8 @@ $mobile-celebrate-margin-top: 1rem;
 $tablet-celebrate-bubble-margin-top: 2rem;
 $tablet-celebrate-title: 28px;
 $tablet-celebrate-text: 16px;
-$tablet-celebrate-padding-top: 0.5rem;
+$tablet-celebrate-padding-top: 1rem;
+
+$mobile-subtitle-size: 20px;
+
+$bold: bold;

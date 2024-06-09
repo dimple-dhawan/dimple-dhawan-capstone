@@ -54,6 +54,12 @@
             @include tablet-celebrate-bubble;
         }
     }
+
+    @include desktop {
+        &__facts {
+            @include desktop-celebrate-bubble;
+        }
+    }
 }
 
 .showFactsCongrats {
