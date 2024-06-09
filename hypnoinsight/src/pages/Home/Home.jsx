@@ -11,7 +11,7 @@ function Home() {
                 Transform Your Life, Overcome Challenges and Achieve Your Goals Now.
             </div>
             <div className="welcome">
-                <div className="welcome__intro-profile-container">
+                {/* <div className="welcome__intro-profile-container"> */}
                     <div className="welcome__introduction">
                         <span className="welcome__greeting">Hi!</span>
                         I'm Jassteena from Empowerment Voyage.   I am a board certified Clinical Hypnotherapist.  I help people feel better fast.  &nbsp;
@@ -19,7 +19,7 @@ function Home() {
                     <div className="welcome__profile">
                         <img className="profile__photo" src={Jassteena} alt="Hypnotherapist"></img>
                     </div>
-                </div>
+                {/* </div> */}
                 <div className="welcome__hypnosis">
                     I help you harness the power of your mind to create lasting, positive change.  Whether you're looking to overcome anxiety, break bad habits, improve your confidence, or achieve personal growth, my services are designed to support you every step of the way.
                 </div>

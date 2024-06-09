@@ -71,6 +71,7 @@
         font-weight: 600;
         font-size: 26px;
         padding-right: 0.5rem;
+        line-height: 1;
     }
 
     &__profile {
@@ -78,35 +79,68 @@
         justify-content: center;
     }
 
-
-
     @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+
         &__greeting {
             font-size: 28px;
         }
 
         &__intro-profile-container {
             display: flex;
-
         }
 
         &__introduction {
             padding-top: 2rem;
             order: 2;
+            flex: 1 1;
         }
 
         &__profile {
             padding: 0 2rem 1.25rem 0;
             order: 1;
+            flex: 1 1;
+        }
+
+        &__hypnosis {
+            order: 3;
+            justify-content: flex-end;
+            flex: 1 1 100%;
+        }
+    }
+
+    @include desktop {
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 288px;
+
+        &__introduction {
+            flex: 0 0 45%;
+            order: 2;
+            height: 50%;
+            width: 50vw;
+        }
+
+        &__profile {
+            flex: 0 0 100%;
+            order: 1;
+        }
+
+        &__hypnosis {
+            flex: 0 0 50%;
+            order: 2;
+            height: 50%;
+            width: 50vw;
         }
 
     }
 }
 
 .profile {
-
     &__photo {
         width: 14rem;
+        margin: 1rem 0;
         border-radius: $module-border-radius;
         display: flex;
         justify-content: center;
@@ -115,6 +149,7 @@
 
         @include tablet {
             width: 18rem;
+            margin: 0;
         }
     }
 }
