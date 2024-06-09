@@ -2,21 +2,32 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/breakpoints" as *;
 
-.module-intro-container {
-    border: 1px solid $primary-purple;
-    border-radius: 9px;
-    padding: 1.25rem;
+.booknow__subheadline {
+    font-style: italic;
+}
 
-    @include tablet {
-        margin: 0 3rem;
+
+.module-intro {
+    &__subtitle {
+        font-weight: 500;
+        padding: 1rem 0;
     }
 
-    @include desktop {
-        margin: 0rem;
+    &__discover {
+        margin-left: 1.5rem;
+    }
+
+    &__container {
+        border-radius: 9px;
+
+        @include desktop {
+            margin: 0rem;
+        }
     }
 }
 
-.start-module {
+.start-module,
+.consult__link {
     border: 1px solid $secondary-orange;
     border-bottom: 3px solid $secondary-orange;
     border-radius: 5px;
@@ -29,6 +40,14 @@
     &:hover {
         @include btn-vital;
     }
+
+    @include tablet {
+        width: 15rem;
+    }
+}
+
+.consult__text {
+    padding: 2rem 0 0;
 }
 
 .show {
