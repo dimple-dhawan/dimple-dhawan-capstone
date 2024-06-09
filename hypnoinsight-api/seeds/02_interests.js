@@ -29,5 +29,21 @@ exports.seed = async function (knex) {
             id: 7,
             interest: 'Allergies',
         },
+        {
+            id: 8,
+            interest: 'Self-Confidence',
+        },
+        {
+            id: 9,
+            interest: 'Insomnia',
+        },
+        {
+            id: 10,
+            interest: 'Chronic Pain',
+        },
+        {
+            id: 11,
+            interest: 'Other',
+        },
     ]);
 };
