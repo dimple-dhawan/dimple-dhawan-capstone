@@ -5,8 +5,8 @@ import { useState } from "react";
 import LearningModule from "../LearningModule/LearningModule";
 
 function HypnoInsights({ closeModule }) {
-  const [startUser, setStartUser] = useState(false);  // true 
-  const [startLearning, setStartLearning] = useState(true);  //
+  const [startUser, setStartUser] = useState(true);
+  const [startLearning, setStartLearning] = useState(false);
   const close = () => {
     closeModule();
   };
