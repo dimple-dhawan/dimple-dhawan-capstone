@@ -39,6 +39,11 @@
         }
     }
 
+    @include desktop {
+        &__headline {
+            font-size: 32px;
+        }
+    }
 }
 
 .services-list {
