@@ -1,0 +1,45 @@
+@use "../../styles/partials/globals" as *;
+
+.services {
+    &__headline {
+        font-size: 26px;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    &__subheadline {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        padding-bottom: 1.5rem;
+        font-weight: 600;
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    &__image {
+
+        width: 15rem;
+        border-radius: $module-border-radius;
+    }
+}
+
+.services-list {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 1.5rem;
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 1.5rem 0 1rem;
+    }
+
+    &__items {
+        margin: 0.5rem 0 1rem 1.5rem;
+    }
+}
