@@ -1,12 +1,40 @@
 @use "../../styles/partials/breakpoints" as *;
 @use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/colours" as *;
+@use "../../styles/partials/globals" as *;
 
 .footer {
     position: relative;
     bottom: 0;
     text-align: center;
-    font-size: 10px;    
-    margin: 6rem 0 0.5rem;
+    font-size: 10px;
+    margin: 3rem 0 0rem;
+    background-color: $footer-lightpurple;
+    padding: 3rem 1rem 0.25rem;
+
+    &__tag {
+        font-size: 14px;
+        //text-align: left;
+    }
+
+    &__booknow {
+        font-size: 14px;
+        background-color: $primary-purple;
+        color: $primary-white;
+        display: flex;
+        margin: 1rem auto 2rem;
+        padding: 0.5rem 1rem;
+
+        width: fit-content;
+        border-radius: $border-radius;
+
+        a {
+            color: $primary-white;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+    }
 
     @include desktop {
         @include desktop-container;
