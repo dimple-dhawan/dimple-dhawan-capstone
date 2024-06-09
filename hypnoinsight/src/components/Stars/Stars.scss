@@ -5,11 +5,14 @@
 .stars {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1rem;
 
     &__star {
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    @include mobile {
+        margin-bottom: 1rem;
     }
 
     @include tablet {
