@@ -21,7 +21,7 @@
         background-color: $primary-purple;
         color: $primary-white;
         display: flex;
-        margin: 1rem auto 3rem;
+        margin: 1rem auto 2.5rem;
         padding: 0.5rem 1rem;
 
         width: fit-content;
@@ -32,10 +32,20 @@
             text-decoration: none;
             font-weight: 400;
         }
+    }
+}
 
+
+.social-media {
+    margin-bottom: 2rem;
+
+    &__title {
+        font-size: 14px;
+        padding-bottom: 0.5rem;
     }
 
-    @include desktop {
-        @include desktop-container;
+    &__icon {
+        width: 26px;
+        margin: 0rem 0.5rem 1rem;
     }
 }

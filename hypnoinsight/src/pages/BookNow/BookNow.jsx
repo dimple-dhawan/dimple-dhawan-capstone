@@ -24,6 +24,12 @@ function Booknow() {
                 <div className="module-intro__text">
                 Before we begin our transformative sessions, it's important to understand what hypnosis is and how it works. Our "Understanding Hypnosis" pre-talk module is designed to guide you through the basics, dispel common myths, and prepare you for a successful hypnotherapy experience.
                 </div>
+                <div 
+                    className="start-module"
+                    onClick={startModule}
+                >
+                    UNDERSTANDING HYPNOSIS
+                </div>
                 <div className="module-intro__subtitle">
                     What You'll Discover:
                 </div>

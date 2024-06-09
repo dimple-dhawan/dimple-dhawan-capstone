@@ -34,7 +34,6 @@
     padding: 0.25rem 0.75rem;
     margin-top: 1rem;
     text-align: center;
-    width: 13rem;
     cursor: pointer;
 
     &:hover {
@@ -42,7 +41,7 @@
     }
 
     @include tablet {
-        width: 15rem;
+        width: 17rem;
     }
 }
 
