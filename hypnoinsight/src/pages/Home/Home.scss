@@ -16,7 +16,7 @@
         font-size: 16px;
         font-style: italic;
         font-weight: 300;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
         font-weight: 600;
     }
 
@@ -32,19 +32,24 @@
     }
 
     &__why-title {
-        font-size: $mobile-subtitle-size;
-        margin-top: 1rem;
+        @include mobile-subtitle;
+        margin: 1.5rem 0 0.75rem;
     }
 
     &__benefits {
-        margin: 0.5rem 0 1rem 2rem;
+        margin: 0.5rem 0 1rem 1.5rem;
         @include pages-content;
+    }
+
+    &__benefits-title {
+        font-weight: 500;
+        padding-right: 0.5rem;
     }
 
 }
 
 .profile-photo {
-    width: 10rem;
+    width: 9rem;
     border-radius: $border-radius;
     float: left;
     margin: 1rem 1.5rem 0rem 0;
