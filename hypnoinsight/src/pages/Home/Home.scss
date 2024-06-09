@@ -1,3 +1,51 @@
+@use "../../styles/partials/globals" as *;
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/colours" as *;
 
+.welcome {
+    @include pages-content;
+
+    &__headline {
+        font-size: 26px;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    &__subheadline {
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 300;
+        padding-bottom: 1rem;
+        font-weight: 600;
+    }
+
+    &__introduction {
+        font-weight: 300;
+    }
+
+    &__greeting {
+        color: $primary-purple;
+        font-weight: 600;
+        font-size: 24px;
+        padding-right: 0.5rem;
+    }
+
+    &__why-title {
+        font-size: $mobile-subtitle-size;
+        margin-top: 1rem;
+    }
+
+    &__benefits {
+        margin: 0.5rem 0 1rem 2rem;
+        @include pages-content;
+    }
+
+}
+
+.profile-photo {
+    width: 10rem;
+    border-radius: $border-radius;
+    float: left;
+    margin: 1rem 1.5rem 0rem 0;
+}

@@ -49,3 +49,8 @@
     margin-top: 2rem;
     padding: 1.5rem;
 }
+
+@mixin pages-content {
+    font-size: 14px;
+    font-weight: 300;
+}
