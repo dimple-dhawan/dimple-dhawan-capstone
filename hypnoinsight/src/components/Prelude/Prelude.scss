@@ -1,7 +1,7 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 
-.welcome {
+.welcome-prelude {
     @include module-content;
     margin-bottom: 1rem;
 }
