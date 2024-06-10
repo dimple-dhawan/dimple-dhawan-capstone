@@ -104,19 +104,19 @@ List the pages of your app with brief descriptions. You can show this visually, 
 ### Mockups
 
 #### Home Page
-![](assets/pages/landing.jpg)
+![](/hypnoinsight-api/assets/pages/landing.jpg)
 
 #### Healing Modalities/Services Page
-![](assets/pages/healing-modalities.jpg)
+![](/hypnoinsight-api/assets/pages/healing-modalities.jpg)
 
 #### Healing Modality Details Page
-![](assets/pages/healing-modality.jpg)
+![](/hypnoinsight-api/assets/pages/healing-modality.jpg)
 
 #### Is Hypnosis right for me? Pre-screening Page
-![](assets/pages/hypno-ready-checklist.jpg)
+![](/hypnoinsight-api/assets/pages/hypno-ready-checklist.jpg)
 
 #### What is hypnosis? Pre-talk Page
-![](assets/pages/pretalk-module.jpg)
+![](/hypnoinsight-api/assets/pages/pretalk-module.jpg)
 
 
 ## Data
@@ -131,6 +131,23 @@ List the pages of your app with brief descriptions. You can show this visually, 
 ### Endpoints
 - /hypnoinsight
   - HypnoInsight Learning Module
+
+  - /hypnoinsight/facts
+  - Facts section in the HypnoInsight Learning Module
+
+  - /hypnoinsight/myths
+  - Myths section in the HypnoInsight Learning Module
+
+  - /hypnoinsight/did-you-know
+  - Myths section in the HypnoInsight Learning Module
+
+  - /interests
+  - List of interest options in HypnoInsight Learning Module
+
+  - /tools
+  - List of offered tools
+  - For future implementation
+
 - HTTP GET:
   - website data for landing, services and booking page
 - HTTP POST
