@@ -2,8 +2,7 @@
 
 ### How to Install
 1.  Open your terminal.   
-2.  Run: 
-
+2.  To install client side, run: 
 ```
 git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git
 cd dimple-dhawan-capstone/hypnoinsight
@@ -14,7 +13,10 @@ npm install react-router-dom
 npm start
 ```
 
-3.  
+3.  Install server side, run:
+```
+cd ../hypnoinsight-api
+```
 
 
 
