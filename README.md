@@ -2,10 +2,18 @@
 
 ### How to Install
 1.  Open your terminal.   
-2.  For all the following instructions, remove the backticks before running.
-3.  Run: 
-  `git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git`.
-4. 
+2.  Run: 
+```
+git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git
+npx create-react-app hypnoinsight
+npm install sass
+npm install axios
+npm install react-router-dom
+cd hypnoinsight
+npm start
+```
+3.  
+
 
 
 ### Overview 
