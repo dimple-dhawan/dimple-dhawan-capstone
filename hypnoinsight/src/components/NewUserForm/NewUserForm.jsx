@@ -9,7 +9,7 @@ function NewUserForm({setStartUser, closeModule}) {
     const [firstNameError, setFirstNameError] = useState(false);
     const [lastNameError, setLastNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
-    const [isServerError, setIsServerERror] = useState(false);
+    const [isServerError, setIsServerError] = useState(false);
     const SERVER_URL = process.env.REACT_APP_SERVER_URL + '/users';
 
     const handleSubmit = async (event) => {
@@ -35,7 +35,7 @@ function NewUserForm({setStartUser, closeModule}) {
             
         } catch (error) {
             console.error(`Could not add new user: ${error}`);
-            setIsServerERror(true);
+            setIsServerError(true);
         }
     }
 

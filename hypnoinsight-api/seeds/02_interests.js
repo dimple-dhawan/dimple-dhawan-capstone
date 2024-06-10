@@ -11,7 +11,7 @@ exports.seed = async function (knex) {
         },
         {
             id: 3,
-            interest: 'Fears (of Abandonment, Success, Failure, etc)',
+            interest: 'Fears',
         },
         {
             id: 4,
