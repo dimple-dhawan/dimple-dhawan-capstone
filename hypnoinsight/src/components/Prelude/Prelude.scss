@@ -1,9 +1,10 @@
 @use "../../styles/partials/mixins" as *;
 @use "../../styles/partials/colours" as *;
 
-.welcome {
+.welcome-module {
     @include module-content;
     margin-bottom: 1rem;
+    font-weight: 300;
 }
 
 .btn {
