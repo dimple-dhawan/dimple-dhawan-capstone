@@ -1,0 +1,46 @@
+.interests {
+    &__interest-container {
+        display: flex;
+        margin-left: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__list {
+        margin-top: 1rem;
+    }
+
+    &__message {
+        display: none;
+    }
+
+    &__error {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: red;
+        font-weight: 500;
+        display: block;
+    }
+
+    &__interest {
+        margin-right: 1rem;
+    }
+}
+
+.form {
+
+    &__instructions {
+        margin: 0;
+    }
+
+    &__buttons {
+        margin: 2rem 0 1rem;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 1.375rem;
+    }
+
+    &__cancel {
+        border: 1px solid;
+    }
+
+}
