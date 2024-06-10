@@ -1,5 +1,13 @@
 # HypnoInsight
 
+### How to Install
+1.  Open your terminal.   
+2.  For all the following instructions, remove the backticks before running.
+3.  Run: 
+  `git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git`.
+4. 
+
+
 ### Overview 
  This application will save hypnotherapist time in pre-talk, and educate potential clients in hypnosis, to elminate any misconceptions and myths about hypnosis such that we can increase the likelihood that clients will be primed, ready and are serious about achieving their goals through hypnosis.  
 
