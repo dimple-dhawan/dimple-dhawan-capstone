@@ -21,7 +21,7 @@
     }
 
     &__title {
-        font-size: 22px;
+        font-size: 1.375rem;
         font-weight: 700;
         font-style: italic;
         color: #3C096C;
@@ -100,7 +100,7 @@
 .nav__home,
 .nav__services,
 .nav__book {
-    font-size: 14px;
+    font-size: 0.875rem;
     width: 5.5rem;
     height: 1.5rem;
     text-align: center;
@@ -108,7 +108,7 @@
     @include tablet {
         width: 6rem;
         text-align: center;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     @include desktop {

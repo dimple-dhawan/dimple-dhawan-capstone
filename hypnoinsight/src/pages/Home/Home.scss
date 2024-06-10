@@ -7,13 +7,13 @@
     @include pages-content;
 
     &__headline {
-        font-size: 26px;
+        font-size: 1.625rem;
         padding-bottom: 1rem;
         font-weight: 600;
     }
 
     &__subheadline {
-        font-size: 16px;
+        font-size: 1rem;
         font-style: italic;
         font-weight: 300;
         padding-bottom: 1.5rem;
@@ -37,32 +37,32 @@
 
     @include tablet {
         &__headline {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         &__subheadline {
-            font-size: 20px;
+            font-size: 1.25rem;
             padding-bottom: 2.5rem;
         }
 
         &__greeting {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         &__why-title {
             clear: both;
             margin-top: 2.5rem;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
 
         &__benefits {
-            font-size: 16px;
+            font-size: 1rem;
         }
     }
 
     @include desktop {
         &__headline {
-            font-size: 32px;
+            font-size: 2rem;
         }
     }
 }
@@ -75,7 +75,7 @@
     &__greeting {
         color: $primary-purple;
         font-weight: 600;
-        font-size: 26px;
+        font-size: 1.625rem;
         padding-right: 0.5rem;
         line-height: 1;
     }
@@ -90,7 +90,7 @@
         flex-wrap: wrap;
 
         &__greeting {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         &__intro-profile-container {
@@ -121,7 +121,7 @@
     @include desktop {
         flex-wrap: wrap;
         flex-direction: column;
-        height: 288px;
+        height: 18rem;
 
         &__introduction {
             flex: 0 0 45%;

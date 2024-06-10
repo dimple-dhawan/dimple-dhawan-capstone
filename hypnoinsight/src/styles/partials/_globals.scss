@@ -11,7 +11,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 0.875rem;
 
     @include tablet {
         font-size: 1rem;
@@ -34,25 +34,25 @@ main {
 
 h1 {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.625rem;
     padding-bottom: 1rem;
 
     @include tablet {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     @include desktop {
-        font-size: 32px;
+        font-size: 2rem;
     }
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     padding-bottom: 1rem;
 
     @include tablet {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 600;
     }
 }
@@ -81,11 +81,11 @@ $module-border-radius: 12px;
 
 $mobile-celebrate-padding-top: 0.75rem;
 $mobile-celebrate-bubble-margin-top: 1rem;
-$mobile-celebrate-title: 20px;
-$mobile-celebrate-text: 14px;
+$mobile-celebrate-title: 1.25rem;
+$mobile-celebrate-text: 0.875rem;
 $mobile-celebrate-margin-top: 1rem;
 
 $tablet-celebrate-bubble-margin-top: 2rem;
-$tablet-celebrate-title: 28px;
-$tablet-celebrate-text: 16px;
+$tablet-celebrate-title: 1.75rem;
+$tablet-celebrate-text: 1rem;
 $tablet-celebrate-padding-top: 1rem;

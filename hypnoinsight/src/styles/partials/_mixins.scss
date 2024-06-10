@@ -13,7 +13,6 @@
 }
 
 @mixin desktop-container {
-    //width: 1280px;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -33,7 +32,7 @@
 
 @mixin button {
     width: 5.5rem;
-    height: 28px;
+    height: 1.75rem;
     border-radius: 4px;
     font-size: 0.875rem;
     outline: none;
@@ -51,11 +50,11 @@
 }
 
 @mixin pages-content {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
 }
 
 @mixin mobile-subtitle {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
 }

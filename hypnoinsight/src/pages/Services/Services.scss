@@ -3,13 +3,13 @@
 
 .services {
     &__headline {
-        font-size: 26px;
+        font-size: 1.625rem;
         padding-bottom: 1rem;
         font-weight: 600;
     }
 
     &__subheadline {
-        font-size: 16px;
+        font-size: 1rem;
         font-style: italic;
         font-weight: 300;
         padding-bottom: 1.5rem;
@@ -17,22 +17,22 @@
     }
 
     &__subtitle {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin: 2rem 0 1.5rem;
         font-weight: 500;
     }
 
     @include tablet {
         &__headline {
-            font-size: 28px;
+            font-size: 1.75rem;
         }
 
         &__subheadline {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
 
         &__subtitle {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-weight: 500;
             margin: 2rem 0 0.5rem;
             text-align: left;
@@ -41,23 +41,23 @@
 
     @include desktop {
         &__headline {
-            font-size: 32px;
+            font-size: 2rem;
         }
     }
 }
 
 .services-list {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 1.5rem;
 
     &__overview {
         padding-bottom: 0.5rem;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     &__items {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     &__image-container {
