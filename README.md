@@ -10,14 +10,35 @@ npm install
 npm install sass
 npm install axios
 npm install react-router-dom
-npm start
 ```
 
-3.  Install server side, run:
+4.  Make a copy of the .env.sample and name it .env and fill in the required information.
+
+5.  run: 
+`npm start`
+
+6.  Install server side, run:
 ```
 cd ../hypnoinsight-api
+npm install
+npm install dotenv
+npm install knex
+npm install express
 ```
 
+7.  Create a schema in mysqlWorkbench.  
+
+8.  Make a copy of the .env.sample and name it .env and fill in the required information.
+
+9.  run:
+```
+npx knex migrate:up
+npx knex migrate:latest
+npxnpm  knex seed:run
+```
+
+10.  run: 
+`npm start`
 
 
 ### Overview 
