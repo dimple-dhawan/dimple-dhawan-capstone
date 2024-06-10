@@ -4,6 +4,18 @@
 @use "../../styles/partials/globals" as *;
 @use "../../styles/partials/breakpoints" as *;
 
+.details__title {
+    @include mobile-module-title;
+
+    @include tablet {
+        @include tablet-module-title
+    }
+
+    @include desktop {
+        @include desktop-module-title;
+    }
+}
+
 .form {
     @include module-content;
 
@@ -38,7 +50,6 @@
 
     @include tablet {
         width: 30rem;
-        margin: 0 auto;
 
         &__buttons {
             justify-content: flex-end;

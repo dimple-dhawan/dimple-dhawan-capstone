@@ -72,7 +72,7 @@ function InterestsForm ({ setStartUser, setShowInterests, setShowPrelude, closeM
 
     return (
         <section>
-            <h2>Interests</h2>
+            <h2 className="interests__title">Interests</h2>
             <form className="interests__form" onSubmit={handleSubmit}>
                 <div className="form__instructions">
                     What are you interested in getting help with?

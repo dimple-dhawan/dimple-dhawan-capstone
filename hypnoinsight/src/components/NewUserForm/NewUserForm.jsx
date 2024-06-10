@@ -73,7 +73,7 @@ function NewUserForm({setShowUserForm, setShowInterests, closeModule}) {
 
     return (
         <section>
-            <h2>Your details</h2>
+            <h1 className="details__title">Your details</h1>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="form__instructions">
                     Please enter the following:

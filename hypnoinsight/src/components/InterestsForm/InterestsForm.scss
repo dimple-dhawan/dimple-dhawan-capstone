@@ -1,3 +1,6 @@
+@use "../../styles/partials/breakpoints" as *;
+@use "../../styles/partials/mixins" as *;
+
 .interests {
     &__interest-container {
         display: flex;
@@ -23,6 +26,18 @@
 
     &__interest {
         margin-right: 1rem;
+    }
+
+    &__title {
+        @include mobile-module-title;
+
+        @include tablet {
+            @include tablet-module-title
+        }
+
+        @include desktop {
+            @include desktop-module-title;
+        }
     }
 }
 
