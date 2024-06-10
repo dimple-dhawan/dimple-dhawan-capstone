@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./NewUserForm.scss";
 import axios from "axios";
 
-function NewUserForm({setStartUser, closeModule}) {
+function NewUserForm({setShowUserForm, setShowInterests, closeModule}) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
@@ -30,7 +30,8 @@ function NewUserForm({setStartUser, closeModule}) {
         try {
             await axios.post(SERVER_URL, newUserObj)
             .then(() => {
-                setStartUser(false);
+                setShowInterests(true);
+                setShowUserForm(false);
             });
             
         } catch (error) {

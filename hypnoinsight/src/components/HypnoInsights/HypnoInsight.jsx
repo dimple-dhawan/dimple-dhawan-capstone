@@ -6,10 +6,11 @@ import { useState } from "react";
 import LearningModule from "../LearningModule/LearningModule";
 
 function HypnoInsights({ closeModule }) {
-  const [startUser, setStartUser] = useState(false);     // true 
+  const [startUser, setStartUser] = useState(true); 
   const [startLearning, setStartLearning] = useState(false); 
+  const [showUserForm, setShowUserForm] = useState(true); 
   const [showPrelude, setShowPrelude] = useState(false); 
-  const [showInterests, setShowInterests] = useState(true);
+  const [showInterests, setShowInterests] = useState(false);
   const close = () => {
     closeModule();
   };
@@ -23,12 +24,17 @@ function HypnoInsights({ closeModule }) {
         </div>
       </div>
       <div className="hypno__content">
-        { startUser && <NewUserForm 
-          setStartUser={setStartUser} 
-          closeModule={closeModule} /> 
+        { startUser && showUserForm && <NewUserForm 
+            setShowUserForm={setShowUserForm}
+            setShowInterests={setShowInterests} 
+            closeModule={closeModule} /> 
         }
         {
-          showInterests  && <InterestsForm />
+          showInterests  && <InterestsForm 
+            setStartUser={setStartUser} 
+            setShowInterests={setShowInterests} 
+            setShowPrelude={setShowPrelude}
+            close={close} />
         }
         { !startUser && !startLearning && showPrelude && <Prelude 
           setStartLearning={setStartLearning}/> 
