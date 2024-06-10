@@ -92,13 +92,9 @@ The tech stack includes:
 - No external APIs will be used
 
 ### Sitemap
-
-List the pages of your app with brief descriptions. You can show this visually, or write it out.
-
 - Home page
 - Service page
 - Book now page
-- Is Hypnosis right for me? Pre-screening -- app
 - Dispelling myths and misconceptions about Hypnosis -- Pre-talk module
 
 ### Mockups
@@ -151,7 +147,8 @@ List the pages of your app with brief descriptions. You can show this visually, 
 - HTTP GET:
   - website data for landing, services and booking page
 - HTTP POST
-  - save user data
+  - save user data (first name, last name and email)
+  - save user interests
 
   
 ### Auth
@@ -173,9 +170,6 @@ No authorization
 
 
 ## Nice-to-haves
-
-Your project will be marked based on what you committed to in the above document. Under nice-to-haves, you can list any additional features you may complete if you have extra time, or after finishing.
-
 1.  Send confirmation email that data is saved
 2.  Send to book after completing Is hyposis right for me now? module
 3.  HTTP PUT to update update user data
@@ -184,4 +178,5 @@ Your project will be marked based on what you committed to in the above document
     - select from a few different technique
 5.  Free downloadable self-hypnosis mp3 on completion of HypnoPrep module
 and quiz
-6.  Free consultation on completion of HypnoPrep module.
+6.  Free consultation on completion of HypnoImage module by entering code given at end.
+7.  Is Hypnosis right for me now Questionaire
