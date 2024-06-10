@@ -4,14 +4,15 @@
 1.  Open your terminal.   
 2.  Run: 
 
-```git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git
+```
+git clone https://github.com/dimple-dhawan/dimple-dhawan-capstone.git
 cd dimple-dhawan-capstone/hypnoinsight
-npm installl
+npm install
 npm install sass
 npm install axios
 npm install react-router-dom
-cd hypnoinsight
-npm start```
+npm start
+```
 
 3.  
 
