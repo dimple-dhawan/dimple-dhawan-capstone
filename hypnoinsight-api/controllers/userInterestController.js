@@ -1,5 +1,14 @@
 const knex = require('knex')(require('../knexfile'));
 
+const getUserInterests = async (_req, res) => {
+    try {
+        const data = await knex("user_interests").select({id: 'user_id', interest: 'interest_id'});
+        res.status(200).json(data);
+    } catch (error) {
+        res.status(500).send(`Error retrieving interests: ${error}`);
+    }
+}
+
 const addUserInterest = async (req, res) => {
     if (!req.body.user_id ||
         !req.body.interest_id) 
@@ -29,6 +38,7 @@ const addUserInterest = async (req, res) => {
 }
 
 module.exports = {
-    addUserInterest
+    addUserInterest,
+    getUserInterests
 }
 
