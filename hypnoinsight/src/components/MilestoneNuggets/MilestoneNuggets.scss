@@ -3,7 +3,6 @@
 @use "../../styles/partials/breakpoints" as *;
 @use "../../styles/partials/mixins" as *;
 
-
 .milestone {
     &__celebrate-title {
         font-size: $mobile-celebrate-title;

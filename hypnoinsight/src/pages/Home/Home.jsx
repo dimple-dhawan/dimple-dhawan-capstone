@@ -45,10 +45,8 @@ function Home() {
                     Experience profound and enduring changes in your thoughts, behaviors, and overall quality of life.
                 </li>
             </ul>
-
         </main>
     )
-
 }
 
 export default Home;

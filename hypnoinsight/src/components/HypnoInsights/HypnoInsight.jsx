@@ -40,9 +40,7 @@ function HypnoInsights({ closeModule }) {
           setStartLearning={setStartLearning}/> 
         }
         { !startUser && startLearning && <LearningModule close={close} /> }
-        
       </div>
-
     </section>
   );
 }

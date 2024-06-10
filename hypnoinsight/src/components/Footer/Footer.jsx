@@ -37,14 +37,11 @@ function Footer() {
                             <img className="social-media__icon"  src={LinkedIn} alt="linkedin" />
                         </a>
                     </div>
-
-
                 </div>
             </div>
             <div>
                 Copyright &copy;2024 Empowerment Voyage
             </div>
-            
         </footer>
     )
 }

@@ -108,7 +108,6 @@
             order: 1;
             flex: 1 1 inherit;
             justify-content: flex-start;
-
         }
 
         &__hypnosis {
@@ -152,8 +151,6 @@
         border-radius: $module-border-radius;
         display: flex;
         justify-content: center;
-
-
 
         @include tablet {
             width: 18rem;

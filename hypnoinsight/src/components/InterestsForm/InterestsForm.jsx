@@ -20,7 +20,6 @@ function InterestsForm ({ setStartUser, setShowInterests, setShowPrelude, closeM
             setShowInterests(false);
             setShowPrelude(true)
         }
-        
     }
 
     const handleOnChange = (e) => {
@@ -109,9 +108,7 @@ function InterestsForm ({ setStartUser, setShowInterests, setShowPrelude, closeM
                         Next
                     </button>
                 </div>
-
             </form>
-
         </section>
     )
 }

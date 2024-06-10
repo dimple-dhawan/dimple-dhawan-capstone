@@ -13,17 +13,14 @@ function Services() {
             <div className="services_introduction">
                 We provide customized hypnosis programs to help you achieve a variety of personal goals, from quitting smoking and losing weight to managing stress and improving sleep. Start your journey to a better you with us today.
             </div>
-
             <div className="services__subtitle">
                 What can hypnotherapy help me with?
             </div>
-
             <div className="services-list__container">
                 <div className="services-list__image-container">
                     <img className="services-list__image" src={Lotus} alt="lotus, mental clarity" />
                 </div>
                 <div className="services-list">
-
                     <div className="services-list__overview">
                         Some common areas of focus include: 
                     </div>

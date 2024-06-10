@@ -10,23 +10,18 @@ function LearningModule({close}) {
     const [factPage, setFactPage] = useState(0);
     const [mythPage, setMythPage] = useState(0);
     const [nuggetPage, setNuggetPage] = useState(0);
-
     const [hypnosisFacts, setHypnosisFacts] = useState([]);
     const [hypnosisMyths, setHypnosisMyths] = useState([]);
     const [hypnosisNuggets, setHypnosisNuggets] = useState([]);
-
     const [factsCompleted, setFactsCompleted] = useState(false);
     const [mythsCompleted, setMythsCompleted] = useState(false);
     const [nuggetCompleted, setNuggetsCompleted] = useState(false);
-
     const [showFacts, setShowFacts] = useState(true);
     const [showMyths, setShowMyths] = useState(false);
     const [showNuggets, setShowNuggets] = useState(false);
-
     const [celebrateFactsMilestone, setCelebrateFactsMilestone] = useState(false);
     const [celebrateMythsMilestone, setCelebrateMythsMilestone] = useState(false);
     const [celebrateNuggetsMilestone, setCelebrateNuggetsMilestone] = useState(false);
-
     const [category, setCategory] = useState(0);
     const SERVER_URL = process.env.REACT_APP_SERVER_URL + '/hypno-insight';
 
@@ -188,11 +183,9 @@ function LearningModule({close}) {
                     nuggetCompleted={nuggetCompleted} 
                 />
             </div>
-
             <h1 className={"learn__category" + ((showFacts || showMyths || showNuggets) ? '' : ' hide-category') } >
                 { categories[category] }
             </h1>
-
             <div className={"learn__facts" + (showFacts ? '' : ' hide-facts' )} >
                 <div className="learn__statement">
                     { hypnosisFacts[factPage].statement }
@@ -204,7 +197,6 @@ function LearningModule({close}) {
                     { hypnosisFacts[factPage].details1 }
                 </div>
              </div>
-
              <div className={"showMyths" + (showMyths ? '' : ' hide-myths' )} >
                 <div className="learn__statement">
                     { hypnosisMyths[mythPage].statement }
@@ -216,7 +208,6 @@ function LearningModule({close}) {
                     { hypnosisMyths[mythPage].details1 }
                 </div>
              </div>
-
              <div className={"showNuggets" + (showNuggets ? '' : ' hide-nuggets' )} >
                 <div className="learn__statement">
                     { hypnosisNuggets[nuggetPage].statement }
@@ -228,11 +219,9 @@ function LearningModule({close}) {
                     { hypnosisNuggets[nuggetPage].details1 }
                 </div>
              </div>
-
              { celebrateFactsMilestone && <MilestoneFacts /> }
              { celebrateMythsMilestone && <MilestoneMyths /> }
              { celebrateNuggetsMilestone && <MilestoneNuggets /> }
-
             <div className="btn">
                 <div 
                     className="btn__next"

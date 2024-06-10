@@ -2,11 +2,6 @@
 @use "../../styles/partials/colours" as *;
 @use "../../styles/partials/breakpoints" as *;
 
-.welcome {
-    @include module-content;
-    margin-bottom: 1rem;
-}
-
 .learn {
     &__category {
         font-size: 1.5rem;

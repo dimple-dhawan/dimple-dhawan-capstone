@@ -14,7 +14,7 @@ function NewUserForm({setShowUserForm, setShowInterests, closeModule}) {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-
+        
         if (isValid()) {
             saveNewUser();
         }
@@ -26,14 +26,12 @@ function NewUserForm({setShowUserForm, setShowInterests, closeModule}) {
             last_name: lastName,
             email: email
         }
-
         try {
             await axios.post(SERVER_URL, newUserObj)
             .then(() => {
                 setShowInterests(true);
                 setShowUserForm(false);
             });
-            
         } catch (error) {
             console.error(`Could not add new user: ${error}`);
             setIsServerError(true);
