@@ -31,5 +31,4 @@ router.get("/myths", (req, res) => {
   res.json(hypnoFact);
 });
 
-
 module.exports = router;

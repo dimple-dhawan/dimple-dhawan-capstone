@@ -10,7 +10,6 @@ const prescreeningQuestions = async (_req, res) => {
     }
 }
 
-
 module.exports = {
     prescreeningQuestions
 }

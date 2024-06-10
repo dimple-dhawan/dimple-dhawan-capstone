@@ -5,5 +5,4 @@ router
     .route("/")
     .post(userController.addUser);
     
-
 module.exports = router;

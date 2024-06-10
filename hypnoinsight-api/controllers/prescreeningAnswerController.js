@@ -29,7 +29,6 @@ const prescreeningAnswerOptions = async (req, res) => {
     }
 }
 
-
 module.exports = {
     allPrescreeningAnswers,
     prescreeningAnswerOptions
