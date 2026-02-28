@@ -33,7 +33,7 @@ npm install express
 9.  run:
 ```
 npx knex migrate:latest
-npm knex seed:run
+npx knex seed:run
 ```
 
 10.  run: 
